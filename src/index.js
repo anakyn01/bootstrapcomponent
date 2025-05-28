@@ -1,17 +1,31 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+//라우터 선언
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+//부트스트랩을 사용하기 위한 cdn선언
+import 'bootstrap/dist/css/bootstrap.min.css'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+import Header from './include/Header';
+import Home from './pages/Home';
+import Cont from './pages/Cont';
+import Typo from './pages/Typo';
+import Color from './pages/Color';
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+export default function App(){
+  return(
+    <>
+<BrowserRouter>
+  <Routes>
+      <Route path="/" element={<Header/>}>{/*헤더 */}
+        <Route index element={<Home/>}/>{/*body */}
+        <Route path="container" element={<Cont/>}/>
+        <Route path="typo" element={<Typo/>}/>
+        <Route path="color" element={<Color/>}/>
+      </Route>
+  </Routes>
+</BrowserRouter>
+</>
+  );
+}
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<App/>);
+/*위에 이 문법은 리액트 18버전부터 */
