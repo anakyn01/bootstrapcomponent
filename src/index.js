@@ -9,6 +9,10 @@ import Home from './pages/Home';
 import Cont from './pages/Cont';
 import Typo from './pages/Typo';
 import Color from './pages/Color';
+import TableRef from './pages/Table';
+import Img from './pages/Img';
+import Jumbo from './pages/Jumbo';
+import Alerts from './pages/Alerts';
 
 export default function App(){
   return(
@@ -20,6 +24,10 @@ export default function App(){
         <Route path="container" element={<Cont/>}/>
         <Route path="typo" element={<Typo/>}/>
         <Route path="color" element={<Color/>}/>
+        <Route path="table" element={<TableRef/>}/>
+        <Route path="img" element={<Img/>}/>
+        <Route path="jumbo" element={<Jumbo/>}/>
+        <Route path="alerts" element={<Alerts/>}/>
       </Route>
   </Routes>
 </BrowserRouter>
