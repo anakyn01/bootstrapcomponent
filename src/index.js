@@ -13,6 +13,8 @@ import TableRef from './pages/Table';
 import Img from './pages/Img';
 import Jumbo from './pages/Jumbo';
 import Alerts from './pages/Alerts';
+import Btn from './pages/Btn';
+import Badges from './pages/Badges';
 
 export default function App(){
   return(
@@ -28,6 +30,8 @@ export default function App(){
         <Route path="img" element={<Img/>}/>
         <Route path="jumbo" element={<Jumbo/>}/>
         <Route path="alerts" element={<Alerts/>}/>
+        <Route path="button" element={<Btn/>}/>
+        <Route path="badges" element={<Badges/>}/>
       </Route>
   </Routes>
 </BrowserRouter>
