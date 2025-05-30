@@ -17,6 +17,7 @@ import Btn from './pages/Btn';
 import Badges from './pages/Badges';
 import Progress from './pages/Progress';
 import Cards from './pages/Cards';
+import Layer from './pages/Layer';
 
 export default function App(){
   return(
@@ -36,6 +37,7 @@ export default function App(){
         <Route path="badges" element={<Badges/>}/>
         <Route path="progress" element={<Progress/>}/>
         <Route path="cards" element={<Cards/>}/>
+        <Route path="layer" element={<Layer/>}/>
       </Route>
   </Routes>
 </BrowserRouter>

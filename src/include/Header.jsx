@@ -41,6 +41,9 @@ const Header = () => {
         <li className="nav-item">
             <Link to="/cards" className="nav-link">카드</Link>
         </li>
+        <li className="nav-item">
+            <Link to="/layer" className="nav-link">모달창</Link>
+        </li>
     </ul>
 </nav>
 <Outlet/>{/*선언하지 않으면 제대로 작동하지 않습니다 */}
