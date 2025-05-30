@@ -15,6 +15,7 @@ import Jumbo from './pages/Jumbo';
 import Alerts from './pages/Alerts';
 import Btn from './pages/Btn';
 import Badges from './pages/Badges';
+import Progress from './pages/Progress';
 
 export default function App(){
   return(
@@ -32,6 +33,7 @@ export default function App(){
         <Route path="alerts" element={<Alerts/>}/>
         <Route path="button" element={<Btn/>}/>
         <Route path="badges" element={<Badges/>}/>
+        <Route path="progress" element={<Progress/>}/>
       </Route>
   </Routes>
 </BrowserRouter>
