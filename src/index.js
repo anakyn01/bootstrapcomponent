@@ -16,6 +16,7 @@ import Alerts from './pages/Alerts';
 import Btn from './pages/Btn';
 import Badges from './pages/Badges';
 import Progress from './pages/Progress';
+import Cards from './pages/Cards';
 
 export default function App(){
   return(
@@ -34,6 +35,7 @@ export default function App(){
         <Route path="button" element={<Btn/>}/>
         <Route path="badges" element={<Badges/>}/>
         <Route path="progress" element={<Progress/>}/>
+        <Route path="cards" element={<Cards/>}/>
       </Route>
   </Routes>
 </BrowserRouter>
