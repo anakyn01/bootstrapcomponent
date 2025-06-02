@@ -19,6 +19,7 @@ import Progress from './pages/Progress';
 import Cards from './pages/Cards';
 import Layer from './pages/Layer';
 import ToastM from './pages/ToastM';
+import Pagination from './pages/Pagination';
 
 export default function App(){
   return(
@@ -40,6 +41,7 @@ export default function App(){
         <Route path="cards" element={<Cards/>}/>
         <Route path="layer" element={<Layer/>}/>
         <Route path="toastm" element={<ToastM/>}/>
+        <Route path="pagination" element={<Pagination/>}/>
       </Route>
   </Routes>
 </BrowserRouter>

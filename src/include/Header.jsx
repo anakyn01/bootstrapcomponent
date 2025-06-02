@@ -17,6 +17,11 @@ const Header = () => {
         <li className="nav-item">
             <Link to="/color" className="nav-link">부트스트랩 기본컬러</Link>
         </li>
+<li className="nav-item dropdown">
+    <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+    부트스트랩 컴포넌트
+    </a>
+    <ul className="dropdown-menu">
         <li className="nav-item">
             <Link to="/table" className="nav-link">테이블</Link>
         </li>
@@ -47,6 +52,12 @@ const Header = () => {
         <li className="nav-item">
             <Link to="/toastm" className="nav-link">토스트메세지</Link>
         </li>
+        <li className="nav-item">
+            <Link to="/pagination" className="nav-link">페이지네이션</Link>
+        </li>
+    </ul>
+</li>       
+        
     </ul>
 </nav>
 <Outlet/>{/*선언하지 않으면 제대로 작동하지 않습니다 */}
