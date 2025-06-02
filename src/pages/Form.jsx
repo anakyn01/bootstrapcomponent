@@ -6,8 +6,26 @@ const Form = () => {
 <Container fluid>{/*<div class="container-fluid">*/}
 <Row>
     <Col sm={6}>
+<h1>form-floating</h1>
+<div className="form-floating mb-3 mt-3">
+    <input type="text" className="form-control" />
+    <label htmlFor="email">Email</label>
+</div>
+<div className="form-floating mb-3 mt-3">
+<textarea className="form-control" id="coment" name="text"></textarea>
+    <label htmlFor="comment">Comments</label>
+</div>
     </Col>
     <Col sm={6}>
+<h1>Validation</h1>
+<form action="" className="was-validated">
+    <div className="">
+        <label htmlFor="">이름 :</label>
+        <input type="text" className="form-control" name="" required/>
+        <div className="valid-feedback">Okay</div>
+        <div className="invalid-feedback">잘못됨</div>
+    </div>
+</form>
     </Col>
 </Row>
 <Row>
