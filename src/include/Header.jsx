@@ -3,8 +3,16 @@ import {Outlet, Link} from "react-router-dom";
 const Header = () => {
     return(
         <>
-<nav>
-    <ul className="nav">
+<nav className="navbar navbar-expand-sm bg-light">
+<div className="container-fluid">
+
+<a className="navbar-brand" href="/">리액트레퍼런스</a>
+
+{/*햄버거 메뉴 */}
+<button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#target"></button>
+
+<div className="collapse navbar-collapse" id="target">
+    <ul className="navbar-nav me-auto">{/*margin end-auto 오른쪽 여백을 자동으로 조절 */}
         <li className="nav-item">
             <Link to="/" className="nav-link">Home</Link>
         </li>
@@ -59,6 +67,8 @@ const Header = () => {
 </li>       
         
     </ul>
+</div>
+</div>
 </nav>
 <Outlet/>{/*선언하지 않으면 제대로 작동하지 않습니다 */}
         </>
