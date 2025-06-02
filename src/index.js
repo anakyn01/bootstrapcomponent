@@ -21,6 +21,7 @@ import Layer from './pages/Layer';
 import ToastM from './pages/ToastM';
 import Pagination from './pages/Pagination';
 import List from './pages/List';
+import Collapse from './pages/Collapse';
 
 export default function App(){
   return(
@@ -44,6 +45,7 @@ export default function App(){
         <Route path="toastm" element={<ToastM/>}/>
         <Route path="pagination" element={<Pagination/>}/>
         <Route path="list" element={<List/>}/>
+        <Route path="collapse" element={<Collapse/>}/>
       </Route>
   </Routes>
 </BrowserRouter>
