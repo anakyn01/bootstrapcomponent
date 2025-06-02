@@ -65,6 +65,9 @@ const Header = () => {
         <li className="nav-item">
             <Link to="/pagination" className="nav-link">페이지네이션</Link>
         </li>
+        <li className="nav-item">
+            <Link to="/list" className="nav-link">리스트그룹</Link>
+        </li>
     </ul>
 </li>       
         
