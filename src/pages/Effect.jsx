@@ -7,11 +7,11 @@ const Effect = () => {
     const[calculation, setCalculation] = useState(0);
 
     useEffect(() => {
-        setTimeout(() => {
+        /*setTimeout(() => {
             setCount((count) => count + 1);
-        }, 1000);
+        }, 1000);*/
         setCalculation(() => count * 2);
-    },[],[count]);/* empty 브라켓을 사용해야됨*/
+    },[count]);/* empty 브라켓을 사용해야됨*/
 
     return(
         <>
@@ -19,6 +19,10 @@ const Effect = () => {
         <Row>
             <Col md={12}>
             <h1>I've rendered {count} times!</h1>
+<button onClick={() => setCount((c) => c + 1 )} className="btn btn-outline-success">
++
+</button>      
+<p className="display-1 text-success">Calculation:{calculation}</p>      
             </Col>
         </Row>
     </Container>
