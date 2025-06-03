@@ -25,6 +25,8 @@ import Collapse from './pages/Collapse';
 import Form from './pages/Form';
 import Flex from './pages/Flex';
 import Flex2 from './pages/Flex2';
+import Hooks from './pages/Hooks';
+import Effect from './pages/Effect';
 
 export default function App(){
   return(
@@ -52,6 +54,8 @@ export default function App(){
         <Route path="form" element={<Form/>}/>
         <Route path="flex" element={<Flex/>}/>
         <Route path="flex2" element={<Flex2/>}/>
+        <Route path="hooks" element={<Hooks/>}/>
+        <Route path="effect" element={<Effect/>}/>
       </Route>
   </Routes>
 </BrowserRouter>
