@@ -23,6 +23,8 @@ import Pagination from './pages/Pagination';
 import List from './pages/List';
 import Collapse from './pages/Collapse';
 import Form from './pages/Form';
+import Flex from './pages/Flex';
+import Flex2 from './pages/Flex2';
 
 export default function App(){
   return(
@@ -48,6 +50,8 @@ export default function App(){
         <Route path="list" element={<List/>}/>
         <Route path="collapse" element={<Collapse/>}/>
         <Route path="form" element={<Form/>}/>
+        <Route path="flex" element={<Flex/>}/>
+        <Route path="flex2" element={<Flex2/>}/>
       </Route>
   </Routes>
 </BrowserRouter>
