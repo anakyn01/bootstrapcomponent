@@ -39,6 +39,21 @@ const Header = () => {
         <li className="nav-item">
             <Link to="/flex2" className="nav-link">유연하게2</Link>
         </li>
+
+<li className="nav-item dropdown">
+    <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+    ReactBootstrap
+    </a>
+    <ul className="dropdown-menu">
+        <li className="nav-item">
+            <Link to="/acc" className="nav-link">Accordion</Link>
+        </li>
+        <li className="nav-item">
+            <Link to="/tabs" className="nav-link">Tabs</Link>
+        </li>
+    </ul>
+</li>
+
 <li className="nav-item dropdown">
     <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
     부트스트랩 컴포넌트

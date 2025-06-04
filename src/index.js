@@ -27,6 +27,8 @@ import Flex from './pages/Flex';
 import Flex2 from './pages/Flex2';
 import Hooks from './pages/Hooks';
 import Effect from './pages/Effect';
+import Acc from './boot/Acc';
+import Tabss from './boot/Tabss';
 
 export default function App(){
   return(
@@ -56,6 +58,8 @@ export default function App(){
         <Route path="flex2" element={<Flex2/>}/>
         <Route path="hooks" element={<Hooks/>}/>
         <Route path="effect" element={<Effect/>}/>
+        <Route path="acc" element={<Acc/>}/>
+        <Route path="tabs" element={<Tabss/>}/>
       </Route>
   </Routes>
 </BrowserRouter>
