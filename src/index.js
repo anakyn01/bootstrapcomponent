@@ -33,6 +33,7 @@ import Buttons from './boot/Buttons';
 import Fig from './boot/Fig';
 import Tb from './boot/Tb';
 import Ref from './pages/Ref';
+import Modals from './boot/Modals';
 
 
 export default function App(){
@@ -69,6 +70,7 @@ export default function App(){
         <Route path="ref" element={<Ref/>}/>
         <Route path="fig" element={<Fig/>}/>
         <Route path="tb" element={<Tb/>}/>
+        <Route path="modal" element={<Modals/>}/>
       </Route>
   </Routes>
 </BrowserRouter>
