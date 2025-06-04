@@ -25,6 +25,9 @@ const Header = () => {
             <Link to="/effect" className="nav-link">useEffect</Link>
         </li>
         <li className="nav-item">
+            <Link to="/ref" className="nav-link">useRef</Link>
+        </li>
+        <li className="nav-item">
             <Link to="/container" className="nav-link">부트스트랩 컨테이너</Link>
         </li>
         <li className="nav-item">

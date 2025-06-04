@@ -30,6 +30,7 @@ import Effect from './pages/Effect';
 import Acc from './boot/Acc';
 import Tabss from './boot/Tabss';
 import Buttons from './boot/Buttons';
+import Ref from './pages/Ref';
 
 export default function App(){
   return(
@@ -62,6 +63,7 @@ export default function App(){
         <Route path="acc" element={<Acc/>}/>
         <Route path="tabs" element={<Tabss/>}/>
         <Route path="buttons" element={<Buttons/>}/>
+        <Route path="ref" element={<Ref/>}/>
       </Route>
   </Routes>
 </BrowserRouter>
