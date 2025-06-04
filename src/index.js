@@ -30,7 +30,10 @@ import Effect from './pages/Effect';
 import Acc from './boot/Acc';
 import Tabss from './boot/Tabss';
 import Buttons from './boot/Buttons';
+import Fig from './boot/Fig';
+import Tb from './boot/Tb';
 import Ref from './pages/Ref';
+
 
 export default function App(){
   return(
@@ -64,6 +67,8 @@ export default function App(){
         <Route path="tabs" element={<Tabss/>}/>
         <Route path="buttons" element={<Buttons/>}/>
         <Route path="ref" element={<Ref/>}/>
+        <Route path="fig" element={<Fig/>}/>
+        <Route path="tb" element={<Tb/>}/>
       </Route>
   </Routes>
 </BrowserRouter>
