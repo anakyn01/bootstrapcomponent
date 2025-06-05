@@ -66,6 +66,12 @@ const Header = () => {
         <li className="nav-item">
             <Link to="/modal" className="nav-link">modal</Link>
         </li>
+        <li className="nav-item">
+            <Link to="/pagen" className="nav-link">스크립트가 들어간 페이지네이션</Link>
+        </li>
+        <li className="nav-item">
+            <Link to="/ts" className="nav-link">Toast</Link>
+        </li>
     </ul>
 </li>
 
